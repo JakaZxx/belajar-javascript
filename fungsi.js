@@ -7,8 +7,15 @@ var y = "3.14";
 var toString = toNum.toString();
 console.log(toString + toString);
 
+///funsi deklarasi
 function jumlah(a,b){
     return a + b;
 }
 
+///fungsi ekspresi
+var kurang = function jumlah(a,b){
+    return a - b;
+};
+
 alert(jumlah(5, 20));
+alert(jumlah(25, 5));
