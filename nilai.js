@@ -1,4 +1,4 @@
-function hitungnilai(nilai) {
+function hitungGrade(nilai) {
     if (nilai < 40) {
         return 'E';
     } else if (nilai < 65) {
@@ -10,18 +10,18 @@ function hitungnilai(nilai) {
     } else if (nilai <= 100) {
         return 'A';
     } else {
-        return 'Nilai tidak valid💀';
+        return 'Nilai tidak valid';
     }
 }
 
-function nilai() {
+function main() {
     var nilai = parseFloat(prompt("Masukkan nilai Anda: "));
     if (isNaN(nilai) || nilai < 0 || nilai > 100) {
-        alert("masukan nilai anda 😒");
+        alert("Nilai tidak valid! Silakan masukkan nilai antara 0 dan 100.");
     } else {
-        var nilai = hitungnilai(nilai);
-        alert("Nilai Anda adalah 😁: " + nilai);
+        var grade = hitungGrade(nilai);
+        alert("Nilai Anda: " + nilai + ", di posisi = " + grade);
     }
 }
 
-nilai();
+main();
